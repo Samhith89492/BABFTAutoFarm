@@ -1,15 +1,15 @@
-
+--// Services
 local players = game:GetService("Players")
  
-
+--// Workspace
 local stages = workspace:WaitForChild("BoatStages"):WaitForChild("NormalStages")
 local penguin, gold = workspace:WaitForChild("ChangeCharacter"), workspace:WaitForChild("ClaimRiverResultsGold")
  
-
+--// Other
 local client = players.LocalPlayer
  
-
-
+--// Main
+---------
 _G.Busy = true
 while _G.Busy do
     local bodyVelocity = Instance.new("BodyVelocity")
@@ -44,4 +44,4 @@ while _G.Busy do
     until client.Character and client.Character:FindFirstChild("HumanoidRootPart")
     
 end
-
+---------
